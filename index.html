@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top secret stronka</title>
+  <link rel="stylesheet" href="1.css">
+</head>
+<body class="theme">
+
+  <p id="demo">.</p>
+  <script>
+    var clicks = 0;
+    function change1(){
+      setEverything("Kuba ja jebie naciśnij normalnie");
+    }
+
+    function change2(){
+      setEverything("Proszę państwa oto debil nawet kliknąć nie umie");
+    }
+
+    function change3(){
+      setEverything("No chyba nie");
+    }
+    
+    function change4(){
+      setEverything("Bosze widzisz i nie grzmisz");
+    }
+    function change5(){
+      setEverything("Ręce opadają");
+    }
+    function change6(){
+      setEverything("To jest dramat");
+    }
+    function change7(){
+      setEverything("Kończ waść wstydu oszczędź (sobie)");
+    }
+    function change8(){
+      setEverything("Załamujesz mnie");
+    }
+    function change9(){
+      setEverything("Kuba no ja Cię prosze...");
+    }
+    function change10(){
+      setEverything("M A S A K R A kuba plz");
+    }
+    function change11(){
+      setEverything("Weź kliknij jak człowiek a nie...");
+    }
+    function change12(){
+      setEverything("No pojebało Cię chyba");
+    }
+    function change13(){
+      setEverything("Nie nie i jeszcze raz nie");
+    }
+    function change14(){
+      setEverything("3 razy nie, następny");
+    }
+    function change15(){
+      setEverything("Kuba pls no, żenada");
+    }
+    function change16(){
+        setEverything("Przykro na to patrzeć");
+    }
+    
+    function setEverything(text){
+      if(clicks >= 17){
+          document.getElementById("demo").innerHTML = "Zapraszam Cię na randkę do kina Mikro na poniedziałek";
+          var myobj = document.getElementById("butts");
+          myobj.remove();
+          var img = document.createElement("img"); 
+          img.src = "puppy.jpg"; 
+          var src = document.getElementById("x"); 
+          src.appendChild(img);
+        }
+        else{
+          document.getElementById("demo").innerHTML = text;
+          clicks++;
+        }
+
+    }
+    </script>
+    <div id="x"></div> 
+
+    <div id="butts" class="grid-container">
+      <div class="grid-item"><button id="hello", type="button", onclick='change1()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change2()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change3()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change4()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change5()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change6()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change7()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change8()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change9()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change10()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change11()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change12()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change13()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change14()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change15()'>Klik</button></div>
+      <div class="grid-item"><button id="hello", type="button", onclick='change16()'>Klik</button></div>     
+    </div>
+       
+</body>
+</html>
